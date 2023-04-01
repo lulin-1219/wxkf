@@ -6,7 +6,7 @@
 body{
 	background-color: #000;
 }
-button{
+a{
 	text-decoration: none;
 	position:absolute;
 	left: 50%;
@@ -25,7 +25,7 @@ button{
 	z-index: -1;
 	
 }
-button::before{
+a::before{
 	content: "";
 	position: absolute;
 	left: -5px;
@@ -37,10 +37,10 @@ button::before{
 	border-radius: 50px;
 	filter:blur(20px) ;
 }
-button:hover:before{
+a:hover:before{
 	animation: sun 8s infinite;
 }
-button:hover{
+a:hover{
 	animation: sun 8s infinite;
 }
 @keyframes sun{
